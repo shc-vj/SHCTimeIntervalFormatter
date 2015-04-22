@@ -1,5 +1,7 @@
 # SHCTimeIntervalFormatter
-NSFormatter subclass converting NSTimeInterval values into strings
+NSFormatter subclass converting NSTimeInterval values into strings.
+`SHCTimeIntervalFormatter` is only a formatter, not a parser.
+
 
 ## Methods
 Convinience methods using a default parameters
