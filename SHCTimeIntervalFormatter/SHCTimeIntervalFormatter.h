@@ -64,14 +64,14 @@ typedef NS_ENUM(NSInteger, SHCTimeIntervalFormatterStyle) {
 @property (nonatomic, assign) SHCTimeIntervalFormatterStyle style;
 
 /**
- Use or not a leading zeros for minutes component for intervals below an hour
+ Use or not a leading zeroes for minutes component for intervals below an hour
  Apply to:
  * SHCTimeIntervalFormatterNumericDynamicHoursStyle
  * SHCTimeIntervalFormatterNumericMSStyle
  
  Default is NO
  */
-@property (nonatomic, assign) BOOL useLeadingZerosForMinutes;
+@property (nonatomic, assign) BOOL useLeadingZeroesForMinutes;
 
 /**
  Convinience method using default parameters of SHCTimeIntervalFormatter

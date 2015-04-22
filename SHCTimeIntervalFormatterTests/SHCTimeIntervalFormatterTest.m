@@ -110,7 +110,7 @@
 - (void)testMinusSignSymbol {
 	// prepare
 	self.formatter.style = SHCTimeIntervalFormatterNumericMSStyle;
-	self.formatter.useLeadingZerosForMinutes = YES;
+	self.formatter.useLeadingZeroesForMinutes = YES;
 	
 	NSString *minusSignSymbol = self.formatter.minusSign;
 	NSString *componentsSeparator = self.formatter.componentsSeparator;

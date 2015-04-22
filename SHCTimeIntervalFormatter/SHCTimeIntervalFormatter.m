@@ -33,7 +33,7 @@ NSString * const SHCTimeIntervalFormatterDefaultInfinityString = @"--:--";
 	if( self ) {
         _style                     = SHCTimeIntervalFormatterNumericDynamicHoursStyle;
         _allowMiliseconds          = NO;
-        _useLeadingZerosForMinutes = NO;
+        _useLeadingZeroesForMinutes = NO;
         _componentsSeparator       = SHCTimeIntervalFormatterDefaultSeparator;
         _minusSign                 = SHCTimeIntervalFormatterDefaultMinusSign;
         _infinityString            = SHCTimeIntervalFormatterDefaultInfinityString;
@@ -82,7 +82,7 @@ NSString * const SHCTimeIntervalFormatterDefaultInfinityString = @"--:--";
 	if( self ) {
         _style                     = [aDecoder decodeIntegerForKey:@"style"];
         _allowMiliseconds          = [aDecoder decodeBoolForKey:@"allowMiliseconds"];
-        _useLeadingZerosForMinutes = [aDecoder decodeBoolForKey:@"useLeadingZerosForMinutes"];
+        _useLeadingZeroesForMinutes = [aDecoder decodeBoolForKey:@"useLeadingZerosForMinutes"];
         _componentsSeparator       = [aDecoder decodeObjectForKey:@"componentsSeparator"];
 		if( nil == _componentsSeparator ) {
 			_componentsSeparator = SHCTimeIntervalFormatterDefaultSeparator;
@@ -106,7 +106,7 @@ NSString * const SHCTimeIntervalFormatterDefaultInfinityString = @"--:--";
 	
 	[aCoder encodeInteger:_style forKey:@"style"];
 	[aCoder encodeBool:_allowMiliseconds forKey:@"allowMiliseconds"];
-	[aCoder encodeBool:_useLeadingZerosForMinutes forKey:@"useLeadingZerosForMinutes"];
+	[aCoder encodeBool:_useLeadingZeroesForMinutes forKey:@"useLeadingZerosForMinutes"];
 	if( _componentsSeparator != SHCTimeIntervalFormatterDefaultSeparator ) {
 		[aCoder encodeObject:_componentsSeparator forKey:@"componentsSeparator"];
 	}
@@ -200,7 +200,7 @@ NSString * const SHCTimeIntervalFormatterDefaultInfinityString = @"--:--";
 				}
 				
 			default:
-				format = (_useLeadingZerosForMinutes == YES) ?  integerLeadingZerosFormat : integerFormat;
+				format = (_useLeadingZeroesForMinutes == YES) ?  integerLeadingZerosFormat : integerFormat;
 		}
 		
 		if( _style != SHCTimeIntervalFormatterNumericSStyle ) {
