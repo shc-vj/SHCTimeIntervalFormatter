@@ -19,7 +19,7 @@ Convinience methods using a default parameters
 - `SHCTimeIntervalFormatterNumericMSStyle` - hours never displayed, minutes can be greater than 59 ex. '112:15'
 -	`SHCTimeIntervalFormatterNumericSStyle` - display only seconds ex. '6735'-	
 
-`allowMiliseconds` - display or not miliseconds parts of `NSTimeInterval`, if set to `NOT` (default) specified time interval is rounded to a nearest integer count of seconds
+`allowMiliseconds` - display or not miliseconds parts of `NSTimeInterval`, if set to `NO` (default) specified time interval is rounded to a nearest integer count of seconds
 
 `useLeadingZerosForMinutes` -  use or not a leading zeros for minutes component for intervals below an hour.
  </br>Apply to:
