@@ -16,7 +16,7 @@ Convinience methods using a default parameters
 ## Properties
 
 `style` - possible values are:
-- `SHCTimeIntervalFormatterNumericDynamicHoursStyle` - hours are displayed only for time intervals above an hour
+- `SHCTimeIntervalFormatterNumericDynamicHoursStyle` - hours are displayed only for a time intervals above an hour (**default**)
 - `SHCTimeIntervalFormatterNumericHMSStyle` - hours always displayed ex. '1:52:15'
 - `SHCTimeIntervalFormatterNumericMSStyle` - hours never displayed, minutes can be greater than 59 ex. '112:15'
 -	`SHCTimeIntervalFormatterNumericSStyle` - display only seconds ex. '6735'
