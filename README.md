@@ -17,7 +17,7 @@ Convinience methods using a default parameters
 - `SHCTimeIntervalFormatterNumericDynamicHoursStyle` - hours are displayed only for time intervals above an hour
 - `SHCTimeIntervalFormatterNumericHMSStyle` - hours always displayed ex. '1:52:15'
 - `SHCTimeIntervalFormatterNumericMSStyle` - hours never displayed, minutes can be greater than 59 ex. '112:15'
--	`SHCTimeIntervalFormatterNumericSStyle` - display only seconds ex. '6735'-	
+-	`SHCTimeIntervalFormatterNumericSStyle` - display only seconds ex. '6735'
 
 `allowMiliseconds` - display or not miliseconds parts of `NSTimeInterval`, if set to `NO` (default) specified time interval is rounded to a nearest integer count of seconds
 
