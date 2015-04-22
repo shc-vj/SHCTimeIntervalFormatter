@@ -23,7 +23,7 @@ Convinience methods using a default parameters
 
 `allowMiliseconds` - display or not miliseconds parts of `NSTimeInterval`, if set to `NO` (default) specified time interval is rounded to a nearest integer count of seconds
 
-`useLeadingZerosForMinutes` -  use or not a leading zeros for minutes component for intervals below an hour.
+`useLeadingZeroesForMinutes` -  use or not a leading zeroes for minutes component for intervals below an hour (default is `NO`)
  </br>Apply to:
  * `SHCTimeIntervalFormatterNumericDynamicHoursStyle`
  * `SHCTimeIntervalFormatterNumericMSStyle`
